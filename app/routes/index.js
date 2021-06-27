@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.group('/v1', (router) => {
     // Products
-    router.group('products', (router) => {
+    router.group('/products', (router) => {
         router.post('/', productController.post);
     });
 });
