@@ -5,12 +5,14 @@ const {
 // POST
 const post = async (req, res) => {
     const {
-        name, price, quantity, created_at, updated_at
+        name, price, quantity
     } = req.body;
+
+    console.log(res);
 
     try {
         let products = await createProductService(
-            name, price, quantity, created_at, updated_at
+            name, price, quantity
         );
         res.json(
             {

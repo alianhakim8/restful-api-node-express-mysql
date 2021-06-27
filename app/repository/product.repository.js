@@ -5,7 +5,7 @@ const createProduct = (name, price, quantity, created_at, updated_at) => {
         name: name,
         price: price,
         quantity: quantity,
-        created_at: created_at,
+        created_at: new Date().toISOString().slice(0, 19).replace('T', ' '),
         updated_at: null
     };
     return Products.query().insert(data);
