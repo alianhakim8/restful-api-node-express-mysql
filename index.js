@@ -6,6 +6,7 @@ require('dotenv').config({
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const routes = require('./app/routes/index');
 
 app.use(express.json());
 app.use(express.urlencoded({
@@ -30,6 +31,12 @@ app.use(function (req, res, next) {
 
     next();
 });
+
+app.get('/', (req, res) => {
+    res.send("App Is Working");
+});
+
+app.use('/api', routes);
 
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);

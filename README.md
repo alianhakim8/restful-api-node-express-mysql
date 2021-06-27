@@ -4,7 +4,7 @@
 
 Request : 
 - Method : POST
-- Endpoint : `/api/products`
+- Endpoint : `/api/v1/products`
 - Header : 
     - Content-Type : application/json
     - Accept : application/json
@@ -40,7 +40,7 @@ Response :
 ## Get Product
 Request : 
 - Method : GET
-- Endpoint : `/api/products/{id_product}`
+- Endpoint : `/api/v1/products/{id_product}`
 - Header : 
     - Accept : application/json
 
@@ -67,7 +67,7 @@ Response :
 
 Request : 
 - Method : PUT
-- Endpoint : `/api/products/{id_product}`
+- Endpoint : `/api/v1/products/{id_product}`
 - Header : 
     - Content-Type : application/json
     - Accept : application/json
@@ -104,7 +104,7 @@ Response :
 
 Request : 
 - Method : GET
-- Endpoint : `/api/products`
+- Endpoint : `/api/v1/products`
 - Header : 
     - Accept : application/json
 - Query Param : 
@@ -136,7 +136,7 @@ Response :
 ## Delete Product
 Request : 
 - Method : DELETE
-- Endpoint : `/api/products/{id_product}`
+- Endpoint : `/api/v1/products/{id_product}`
 - Header : 
     - Accept : application/json
 
