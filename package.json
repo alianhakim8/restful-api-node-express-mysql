@@ -18,6 +18,10 @@
     "knex": "^0.95.6",
     "mysql": "^2.18.1",
     "cors": "^2.8.5",
+    "express-group-routes": "^1.1.0",
+    "objection": "^2.2.14",
+    "objection-soft-delete": "^1.0.7",
+    "objection-unique": "^1.2.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
