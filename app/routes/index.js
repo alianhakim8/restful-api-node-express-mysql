@@ -9,8 +9,9 @@ router.group('/v1', (router) => {
     // Products
     router.group('/products', (router) => {
         router.post('/', productController.post);
+        router.get('/', productController.get);
+        router.get('/:id', productController.show);
     });
 });
-
 
 module.exports = router;
